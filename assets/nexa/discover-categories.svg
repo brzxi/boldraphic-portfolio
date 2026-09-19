@@ -20,22 +20,10 @@
       .glass{fill:url(#card);stroke:#454545;stroke-width:1.5}
       .icon{fill:none;stroke:#f7f7f4;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
       .accent{stroke:#d8f500}
-      .card1{animation:f1 7.2s ease-in-out infinite}
-      .card2{animation:f2 7.2s ease-in-out infinite}
-      .card3{animation:f3 7.2s ease-in-out infinite}
-      .card4{animation:f4 7.2s ease-in-out infinite}
-      .card5{animation:f5 7.2s ease-in-out infinite}
-      .card6{animation:f6 7.2s ease-in-out infinite}
       .pulse{animation:pulse 2.4s ease-in-out infinite}
       .dash{stroke-dasharray:14 20;animation:dash 5s linear infinite}
       @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
       @keyframes dash{to{stroke-dashoffset:-170}}
-      @keyframes f1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(12px,-12px) scale(1.04)}}
-      @keyframes f2{0%,100%{transform:translate(0,0) scale(.98)}50%{transform:translate(-10px,14px) scale(1.03)}}
-      @keyframes f3{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(8px,10px) rotate(2deg)}}
-      @keyframes f4{0%,100%{transform:translate(0,0)}50%{transform:translate(-12px,-8px)}}
-      @keyframes f5{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(8px,-14px) scale(1.05)}}
-      @keyframes f6{0%,100%{transform:translate(0,0)}50%{transform:translate(-8px,12px)}}
       text{font-family:Arial,Tahoma,sans-serif}
     </style>
   </defs>
@@ -46,7 +34,7 @@
   <path class="orbit pulse" d="M40 320 C180 250 255 350 430 285 C545 243 585 155 660 95" stroke-width="3" opacity=".7"/>
 
   <!-- Design -->
-  <g class="card1" transform-origin="170px 130px">
+  <g transform-origin="170px 130px">
     <rect class="glass" x="70" y="55" width="160" height="135" rx="27"/>
     <circle cx="150" cy="119" r="34" fill="#d8f500"/>
     <circle cx="137" cy="108" r="5" fill="#171717"/><circle cx="156" cy="102" r="5" fill="#171717"/>
@@ -55,13 +43,13 @@
   </g>
 
   <!-- Productivity -->
-  <g class="card2" transform-origin="388px 102px">
+  <g transform-origin="388px 102px">
     <rect class="glass" x="300" y="35" width="176" height="134" rx="27"/>
     <path class="icon accent" d="M342 132V103M371 132V83M400 132V64M429 132V49" stroke-width="14"/>
   </g>
 
   <!-- AI -->
-  <g class="card3" transform-origin="575px 212px">
+  <g transform-origin="575px 212px">
     <rect class="glass" x="505" y="150" width="142" height="142" rx="29"/>
     <rect x="540" y="184" width="72" height="72" rx="14" fill="#d8f500"/>
     <text x="576" y="232" text-anchor="middle" font-size="38" font-weight="900" fill="#151515">AI</text>
@@ -72,7 +60,7 @@
   </g>
 
   <!-- Education -->
-  <g class="card4" transform-origin="270px 300px">
+  <g transform-origin="270px 300px">
     <rect class="glass" x="188" y="247" width="164" height="125" rx="26"/>
     <path class="icon" d="M220 324h100M231 312h79M244 300h54"/>
     <path class="icon accent" d="M225 282l45-18 45 18-45 18z"/>
@@ -80,14 +68,14 @@
   </g>
 
   <!-- Entertainment -->
-  <g class="card5" transform-origin="456px 325px">
+  <g transform-origin="456px 325px">
     <rect class="glass" x="386" y="267" width="150" height="112" rx="26"/>
     <path class="icon" d="M423 324c4-27 17-40 38-40s34 13 38 40l5 25c2 12-11 18-19 9l-17-18h-14l-17 18c-8 9-21 3-19-9z"/>
     <path class="icon accent" d="M434 315h18M443 306v18M480 312h.1M492 323h.1" stroke-width="6"/>
   </g>
 
   <!-- Cloud -->
-  <g class="card6" transform-origin="592px 320px">
+  <g transform-origin="592px 320px">
     <rect class="glass" x="547" y="292" width="128" height="90" rx="25"/>
     <path class="icon accent" d="M577 349h65c15 0 24-10 24-22 0-11-8-20-19-22-4-16-17-26-33-26-17 0-31 12-34 29-12 2-20 10-20 20 0 12 8 21 17 21z" stroke-width="5"/>
   </g>
